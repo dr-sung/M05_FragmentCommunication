@@ -16,6 +16,6 @@ public class ResultFragment extends Fragment {
 
     public void displayResults(String result) {
         TextView tv = (TextView) getActivity().findViewById(R.id.tv_result);
-        tv.setText(result);
+        tv.setText("Your pizza: " + result);
     }
 }

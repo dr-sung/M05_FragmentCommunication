@@ -20,11 +20,6 @@ public class SelectionFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_selection, container, false);
-    }
-
-    @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         pizzaConfigureImplementor = (PizzaConfigure) context;
@@ -49,6 +44,11 @@ public class SelectionFragment extends Fragment {
                         spinnerTopping2.getSelectedItem().toString());
             }
         });
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_selection, container, false);
     }
 
 }

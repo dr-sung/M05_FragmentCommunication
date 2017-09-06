@@ -6,7 +6,7 @@
 
     <fragment class="edu.uco.hsung.m05_fragmentcommunication.SelectionFragment"
         android:id="@+id/selection_fragment"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

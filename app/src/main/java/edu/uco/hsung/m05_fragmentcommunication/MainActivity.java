@@ -1,6 +1,7 @@
 package edu.uco.hsung.m05_fragmentcommunication;
 
 import android.app.Activity;
+import android.content.res.Resources;
 import android.os.Bundle;
 
 public class MainActivity extends Activity implements SelectionFragment.PizzaConfigure {
@@ -16,7 +17,9 @@ public class MainActivity extends Activity implements SelectionFragment.PizzaCon
         ResultFragment resultFragment =
                 (ResultFragment) getFragmentManager().findFragmentById(R.id.result_fragment);
 
-        String result = size + " " + crest + " " + topping1 + " " + topping2;
+        Resources res = getResources();
+        String result = String.format(res.getString(R.string.result_string),
+                size, crest, topping1, topping2);
         resultFragment.displayResults(result);
     }
 }

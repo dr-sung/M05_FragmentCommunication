@@ -24,7 +24,7 @@ public class ResultFragment extends Fragment {
     }
 
     public void displayResults(String size, String crest, String topping1, String topping2) {
-        if (size == null) return;
+        if (size == null) return; // initial screen: Skip displaying
         TextView tv = (TextView) getActivity().findViewById(R.id.tv_result);
         Resources res = getActivity().getResources();
         String result = String.format(res.getString(R.string.result_string),

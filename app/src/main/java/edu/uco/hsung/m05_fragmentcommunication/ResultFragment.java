@@ -18,9 +18,13 @@ public class ResultFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        SelectionFragment.PizzaConfigure myPizza = (SelectionFragment.PizzaConfigure) getActivity();
+        displayResults(myPizza.getSize(), myPizza.getCrest(), myPizza.getTopping1(), myPizza.getTopping2());
     }
 
     public void displayResults(String size, String crest, String topping1, String topping2) {
+        if (size == null) return;
         TextView tv = (TextView) getActivity().findViewById(R.id.tv_result);
         Resources res = getActivity().getResources();
         String result = String.format(res.getString(R.string.result_string),

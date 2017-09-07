@@ -16,7 +16,7 @@
     <Spinner
         android:id="@+id/spinner_size"
         android:entries="@array/sizes"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView" />
@@ -24,7 +24,7 @@
     <Spinner
         android:id="@+id/spinner_crest"
         android:entries="@array/crests"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/spinner_size" />
@@ -32,7 +32,7 @@
     <Spinner
         android:id="@+id/spinner_topping1"
         android:entries="@array/toppings"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/spinner_crest" />
@@ -40,17 +40,16 @@
     <Spinner
         android:id="@+id/spinner_topping2"
         android:entries="@array/toppings"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/spinner_topping1" />
 
     <Button
-        android:id="@+id/button_make"
-        android:layout_width="wrap_content"
+        android:id="@+id/button_order"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/spinner_topping2"
-        android:layout_marginStart="119dp"
-        android:text="@string/button_make" />
+        android:text="@string/button_order" />
 </RelativeLayout>

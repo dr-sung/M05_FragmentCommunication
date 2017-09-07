@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">M05_FragmentCommunication</string>
     <string name="configure_pizza">Make your own pizza!</string>
-    <string name="button_make">Order</string>
+    <string name="button_order">Order</string>
+
     <string name="result_string">You have ordered a pizza as follows:\n
         Size    : %1$s\n
         Crest   : %2$s\n
@@ -17,9 +18,9 @@
     </string-array>
 
     <string-array name="crests">
-        <item>Thick</item>
-        <item>Thin</item>
         <item>Chicago Deep Dish</item>
+        <item>Thin</item>
+        <item>Thick</item>
     </string-array>
 
     <string-array name="toppings">

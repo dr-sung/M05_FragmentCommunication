@@ -15,6 +15,11 @@ public class ResultFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_result, container, false);
     }
 
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+    }
+
     public void displayResults(String size, String crest, String topping1, String topping2) {
         TextView tv = (TextView) getActivity().findViewById(R.id.tv_result);
         Resources res = getActivity().getResources();

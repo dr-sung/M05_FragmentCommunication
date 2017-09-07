@@ -24,13 +24,7 @@ public class MainActivity extends Activity implements SelectionFragment.PizzaCon
     }
 
     @Override
-    public void makePizza(String size, String crest, String topping1, String topping2) {
-
-        this.size = size;
-        this.crest = crest;
-        this.topping1 = topping1;
-        this.topping2 = topping2;
-
+    public void orderPizza() {
         ResultFragment resultFragment =
                 (ResultFragment) getFragmentManager().findFragmentById(R.id.result_fragment);
 
@@ -46,34 +40,42 @@ public class MainActivity extends Activity implements SelectionFragment.PizzaCon
         outState.putString("TOPPING2", topping2);
     }
 
+    @Override
     public String getSize() {
         return size;
     }
 
+    @Override
     public void setSize(String size) {
         this.size = size;
     }
 
+    @Override
     public String getCrest() {
         return crest;
     }
 
+    @Override
     public void setCrest(String crest) {
         this.crest = crest;
     }
 
+    @Override
     public String getTopping1() {
         return topping1;
     }
 
+    @Override
     public void setTopping1(String topping1) {
         this.topping1 = topping1;
     }
 
+    @Override
     public String getTopping2() {
         return topping2;
     }
 
+    @Override
     public void setTopping2(String topping2) {
         this.topping2 = topping2;
     }

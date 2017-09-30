@@ -3,7 +3,8 @@ package edu.uco.hsung.m05_fragmentcommunication;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class MainActivity extends Activity implements SelectionFragment.PizzaConfigure {
+public class MainActivity extends Activity
+        implements SelectionFragment.PizzaConfigure {
 
     private String size;
     private String crest;
